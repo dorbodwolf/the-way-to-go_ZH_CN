@@ -3,8 +3,8 @@
 package main
 
 func main() {
-	var p *int = nil
-	*p = 0
+	var ptr *int = nil
+	*ptr = 0
 
 }
 
