@@ -17,6 +17,7 @@ func main() {
 	}
 	fmt.Println()
 	timens := int64(time.Now().Nanosecond())
+	fmt.Printf("纳秒时间：%d /",timens)
 	rand.Seed(timens)
 	for i := 0; i < 10; i++ {
 		fmt.Printf("%2.2f / ", 100*rand.Float32())
