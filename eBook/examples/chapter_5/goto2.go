@@ -5,8 +5,9 @@ import "fmt"
 
 func main() {
 	a := 1
-	goto TARGET // compile error
+	//goto TARGET // compile error
 	b := 9
+	goto TARGET
 TARGET:
 	b += a
 	fmt.Printf("a is %v *** b is %v", a, b)
