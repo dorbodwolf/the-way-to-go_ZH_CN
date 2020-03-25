@@ -4,17 +4,21 @@ import (
 	"fmt"
 	"strconv"
 )
+func atoi (s string) (n int) {
+	n, _ = strconv.Atoi(s)
+	return
+}
 
 func main() {
-	var orig string = "ABC"
+	var orig string = "999"
 	// var an int
 	var newS string
 	// var err error
 
 	fmt.Printf("The size of ints is: %d\n", strconv.IntSize)
 	// anInt, err = strconv.Atoi(origStr)
-	an, err := strconv.Atoi(orig)
-	if err != nil {
+	an := atoi(orig)
+	if err:=an; err == 0 {
 		fmt.Printf("orig %s is not an integer - exiting with error\n", orig)
 		return
 	}
